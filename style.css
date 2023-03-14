@@ -5,3 +5,103 @@
 html {
   font-size: 10px;
 }
+
+body {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  background-color: #8AC4F0;
+}
+
+h1{
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  width: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 50px;
+  margin-left: 30vw;
+}
+
+.grid-items{
+  border: 0.1rem solid gray;
+  font-size: 2rem;
+  background-color: white;
+  height: 10vh;
+  width: 10vw;
+}
+
+.prompt{
+  position: absolute;
+  font-weight: 800;
+  font-family: sans-serif;
+  margin: 0.2rem;
+}
+
+.special-answer{
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+}
+
+#box1{
+  border-top: 0.75rem solid black;
+  border-left: 0.75rem solid black;
+  border-bottom: 0.75rem solid black;
+}
+#box2, #box4{
+  border-top: 0.75rem solid black;
+  border-right: 0.75rem solid black;
+  border-bottom: 0.75rem solid black;
+}
+
+#box3{
+  border-top: 0.75rem solid black;
+  border-bottom: 0.75rem solid black;
+}
+
+#box5, #box13{
+  border-left: 0.75rem solid black;
+  border-bottom: 0.75rem solid black;
+}
+
+#box6, #box12{
+  border-right: 0.75rem solid black;
+}
+
+#box8, #box10, #box11, #box14, #box16{
+  border-bottom: 0.75rem solid black;
+  border-right: 0.75rem solid black;
+}
+
+#box9{
+  border-bottom: 0.75rem solid black;
+  border-right: 0.75rem solid black;
+  border-left: 0.75rem solid black;
+}
+
+#box15{
+  border-bottom: 0.75rem solid black;
+}
+
+@media screen and (min-width: 475px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+}
