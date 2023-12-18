@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin: auto;
   background-color: #8AC4F0;
@@ -19,19 +19,25 @@ h1{
 
 .grid {
   display: grid;
-  width: 1px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 150px);
   margin-top: 50px;
-  margin-left: 30vw;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  /* -1/2 width */
+  margin-top: -300px;
+  /* -1/2 height */
 }
 
 .grid-items{
   border: 0.1rem solid gray;
   font-size: 2rem;
   background-color: white;
-  height: 10vh;
-  width: 10vw;
+  height: 150px;
+  width: 150px;
 }
 
 .prompt{
@@ -97,6 +103,21 @@ h1{
 @media screen and (max-width: 1400px) {
   html {
     font-size: 12px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    margin-left: -200px;
+    /* -1/2 width */
+    margin-top: -200px;
+    /* -1/2 height */
+  }
+  
+  .grid-items{
+    height: 100px;
+    width: 100px;
   }
 }
 
